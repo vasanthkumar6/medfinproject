@@ -1,0 +1,88 @@
+<!-- <p>messageform works!</p> -->
+<!-- <div class="container-fluid"> -->
+<!-- <div><img src="../../assets/HT_virtual_Visits_Deloitte_GettyImages-927897070.jpg" alt="" height="50%" width="100%"></div> -->
+<!-- </div> -->
+<div class="bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="pt-5"></div>
+                <h2 class="pt-5">Expert treatment advice from world's <br>best specalists's</h2>
+                <div>
+                    <p><i class="fa fa-users" aria-hidden="true"></i>10,000 patients served</p>
+                    <p><i class="fa fa-stethoscope" aria-hidden="true"></i>By 170+ specalist's</p>
+                    <p><i class="fa fa-plus-square" aria-hidden="true"></i>40% awitched to better treatment</p>
+                    <p><i class="fa fa-usd" aria-hidden="true"></i>saving precious time and money</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Tell us more to get started on your treatment.</h5>
+                        <form #ref="ngForm" (ngSubmit)="message(ref.value)">
+                            <div class="form-group text-dark">
+                                <input type="text" name="firstName" id="FirstName" class="form-control"
+                                    placeholder="FirstName" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="firstName" id="Your EmailId" class="form-control"
+                                    placeholder="Your EmailId" required> <!-- <label for="firstName">First Name</label> -->
+                            </div>
+                            <div class="form-group ">
+                                <input type="text" class="form-control" ng2TelInput>
+                            </div>
+                            <div class="form-group ">
+                                <select class="custom-select" class="form-control"
+                                    aria-label="Example select with button addon">
+                                    <option selected>Please select your question</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button id="form-button" class="btn btn-warning form-control">START NOW</button>
+                                <span >
+                                <p id="terms" class="mt-1">By clicking on START NOW you <a id="term-anchor">agree to the terms and conditions agree.</a></p> 
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-1 text-center ">
+            <img src="../../assets/download.png" alt="" height="50px">
+        </div>
+        <div class="col-md-3 text-left" id="x">
+            <p class="heading"><b>10+ year's Experience</b></p>
+            <p class="content">Our cancer experts have an average infield experience of 10 years</p>
+        </div>
+        <div class="col-md-1 text-center">
+            <img src="../../assets/82e38ee75c17a68e56eb6e82b604deb7-doctor-stethoscope-icon-by-vexels.png" alt=""
+                height="80px">
+        </div>
+        <div class="col-md-3" id="x">
+            <p class="heading"><b>10k+ patients treated</b></p>
+            <p class="content">Each of our oncologist have treated 10,000 members</p>
+        </div>
+        <div class="col-md-1 text-center">
+            <img src="../../assets/images.jfif" alt="" height="70px">
+        </div>
+        <div class="col-md-3" id="x">
+            <p class="heading"><b>Top Oncologists</b></p>
+            <p class="content">our doctors are trained at top cancer institutes such as Tata Memorial,IIMS, memorial
+                sloan kettering(US)</p>
+        </div>
+
+    </div>
+</div>
+<app-abouthospital></app-abouthospital>

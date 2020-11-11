@@ -1,0 +1,90 @@
+<div>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md" *ngFor="let v of doctors">
+                <div class="card-body ">
+                    <img [src]="v.avatar" alt="">
+                    <div>
+                        <span>Dr.{{v.first_name}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <span *ngIf="btnStatus">
+                    <div class="card mt-4" style="width: 10rem;" (click)="loadmore()">
+                        <img src="../../assets/dummy-img.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="card-text text-center">
+                                <p [innerHtml]="Remaining" class="loading-paragraph"></p>
+                                <p class="loadpara">more Doctors</p>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+</div>
+
+
+<table>
+    <tr>
+        <td>
+    <button id="btn1" class="btn btn-warning text-white w-25">START NOW</button>
+        </td>
+        <td>
+            <button id="btn2" class="btn btn-white w-25" style="font-weight: 700;">SEE PRICING</button>
+        </td>
+    </tr>
+</table>
+    
+
+
+<div class="container">
+    <div class="text-center text-secondary">
+        <h3>WHAT PEOPLE ARE SAYING</h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-body shadow-sm">
+                <img src="../../assets/pro1.jpg" class="pro" alt="">
+                <h4 class="py-3">Vasanth</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptatibus laboriosam inventore, quam
+                    corporis,
+                    aliquid ad ipsum itaque officia vel reprehenderit voluptates sunt cumque! Porro quod possimus harum
+                    minima nulla.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-body shadow-sm">
+                <img src="../../assets/pro2.jfif" class="pro" alt="">
+                <h4 class="py-3">Vamsi</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptatibus laboriosam inventore, quam
+                    corporis,
+                    aliquid ad ipsum itaque officia vel reprehenderit voluptates sunt cumque! Porro quod possimus harum
+                    minima nulla.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 shadow-sm">
+            <div class="card-body">
+                <img src="../../assets/pro3.jpeg" class="pro" alt="">
+                <h4 class="py-3">Ajay</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptatibus laboriosam inventore, quam
+                    corporis,
+                    aliquid ad ipsum itaque officia vel reprehenderit voluptates sunt cumque! Porro quod possimus harum
+                    minima nulla.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

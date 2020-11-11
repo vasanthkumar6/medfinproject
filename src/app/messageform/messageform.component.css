@@ -1,0 +1,67 @@
+.bg{
+  background-image: url("../../assets/virtual.jpg");
+
+  /* Full height */
+  height: 65vh; 
+
+  /* Center and scale the image nicel*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width:768px) 
+{
+  .bg{
+      height:100%;
+  }
+  .card{
+      margin-bottom: 3rem;
+  }
+  
+}
+.card{
+    width: 18rem;
+    margin-top: 2rem;
+}
+
+.form-control{
+    border:none;
+    border-bottom: 1px solid #404040;
+    border-radius: 0;
+}
+
+input:focus{
+   box-shadow:none;
+}
+
+select{
+   box-shadow:none;
+}
+
+#form-button
+{
+    border:none;
+}
+
+button{
+    background-color: #ff8000;
+    font-weight: 700;
+    color: white;
+}
+i{
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    color:rgb(47, 108, 221);
+}
+
+#terms{
+    font-size:10px;
+}
+#term-anchor{
+    color: #ff8000;
+}
+h5{
+    font-weight: 600;
+}
